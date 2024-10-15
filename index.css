@@ -1,0 +1,404 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 90px; /* Adjust this value based on your navbar height */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-size: cover;
+}
+nav {
+  background-color: rgb(244, 0, 0);
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+a:hover {
+  border: 2px solid white;
+  transition: 0.3s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+#container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+.container-box {
+  width: 20%;
+  height: 450px;
+  padding: 20px;
+  background-size: contain;
+  border: 2px solid #fff;
+  flex: 1;
+}
+.container-box:hover {
+  flex: 3;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.food-section h1 {
+  margin: 1.5rem;
+  color: #fff;
+  background-color: red;
+  border: 3px solid red;
+  padding: 0 2rem 0.2rem 0.9rem;
+  border-radius: 0 0 15px 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.food-section h1:hover {
+  color: red;
+  background-color: white;
+  border: 3px solid red;
+}
+
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 0.85rem;
+  position: relative;
+  bottom: 17px;
+}
+.box {
+  /* border: 2px solid black; */
+  height: 305px;
+  width: 23%;
+  border: 1px solid lightgray;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  padding: 20px 0px 15px;
+  margin-top: 2rem;
+}
+
+.box-img {
+  height: 200px;
+  background-size: cover;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: 0.8s;
+}
+.box-img:hover {
+  transform: scale(1.09);
+}
+h2 {
+  color: black;
+  margin-left: 0.5rem;
+}
+h2 span {
+  color: rgb(112, 107, 107);
+  font-size: smaller;
+  margin-left: 0.5rem;
+  text-decoration: line-through;
+}
+.btn {
+  float: right;
+  color: #fff;
+  background-color: #318616;
+  font-size: large;
+  border: 2px solid #318616;
+  cursor: pointer;
+  padding: 0 10px 0;
+  border-radius: 5px;
+  position: relative;
+  bottom: 1.3rem;
+  width: 66px;
+  height: 32.28px;
+  font-weight: 700;
+  
+
+  &:hover {
+    color: #318616;
+    background-color: #f7fff9;
+    box-shadow: 1px 0.75px 2px rgba(18, 236, 37, 0.50);
+   
+  }
+}
+.box-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+  overflow: hidden;
+}
+.box-content h2 {
+  color: black;
+  cursor: pointer;
+}
+#moving {
+  width: 100vw;
+  margin-top: 1rem;
+  background-image: url("https://image.shutterstock.com/image-photo/roadside-view-grass-on-white-260nw-111862220.jpg");
+}
+#moving img {
+  height: 200px;
+}
+
+.list {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 3rem;
+  margin: 0 auto;
+  z-index: 100;
+  font-size: 20px;
+  z-index: 17;
+  text-align: center;
+}
+.list h2 {
+  margin: 0;
+  color: rgb(213, 129, 19);
+  background-color: #fff;
+  text-decoration: underline;
+}
+.list h3 {
+  color: rgb(104, 87, 87);
+}
+.list p {
+  font-style: italic;
+  color: rgb(49, 44, 44);
+  font-weight: 600;
+}
+.list span {
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.list p strong {
+  display: block;
+  font-style: normal;
+  color: rgb(6, 162, 6);
+  font-weight: 800;
+  margin: 0;
+  background-color: #fff;
+}
+
+.confirm-button {
+  font-size: large;
+  font-weight: 700;
+  width: 100%;
+  height: 3rem;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  bottom: 0%;
+  z-index: 5;
+}
+.confirm-button:hover {
+  color: #318616;
+  border: 4px solid #318616;
+  box-shadow: inset 1px 0.75px 12px rgba(18, 236, 37, 0.50);
+  background-color: #fff;
+}
+
+@media (max-width: 1044px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
+  .box {
+    width: 32%;
+  }
+  .container-box {
+    height: 420px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 924px) {
+  label.logo {
+    font-size: 27px;
+    padding-left: 40px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .container-box {
+    height: 360px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 856px) {
+  nav {
+    height: 65px;
+  }
+  nav ul li,
+  label.logo,
+  .checkbtn {
+    line-height: 65px;
+    margin-right: 50px;
+  }
+  .box {
+    width: 48%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  nav ul li a {
+    display: none;
+  }
+  .container-box {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #070707;
+    top: 65px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    display: block;
+    font-size: 22px;
+  }
+  a:hover,
+  a.active {
+    background-color: none;
+    color: aqua;
+    border: none;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 750px) {
+  nav {
+    height: 55px;
+  }
+  nav ul li,
+  label.logo,
+  .checkbtn {
+    line-height: 55px;
+    margin-right: 45px;
+  }
+  label.logo {
+    font-size: 25px;
+    padding-left: 30px;
+  }
+  .container-box {
+    height: 250px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  ul {
+    top: 55px;
+  }
+}
+@media (max-width: 470px) {
+  nav {
+    height: 40px;
+  }
+  nav ul li,
+  label.logo,
+  .checkbtn {
+    line-height: 40px;
+    margin-right: 15px;
+  }
+  ul {
+    top: 40px;
+  }
+  label.logo {
+    font-size: 18px;
+    padding-left: 18px;
+  }
+  .box {
+    width: 100%;
+    margin: 20px;
+  }
+  .food-heading h1 {
+    position: relative;
+    bottom: 1rem;
+  }
+  .container-box {
+    height: 150px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}

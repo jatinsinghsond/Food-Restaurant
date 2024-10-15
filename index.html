@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhukkad.com</title>
+    <link rel="icon" type="images/png" href="https://img.icons8.com/?size=100&id=W5NfepWqYj9v&format=png&color=000000">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Bhukkad.com</label>
+      <ul>
+        <li><a href="#container">Home</a></li>
+        <li><a href="#starter">Starter</a></li>
+        <li><a href="#Main-course">Main-course</a></li>
+        <li><a href="#Desserts">Desserts</a></li>
+      </ul>
+    </nav>
+
+    <div id="container">
+      <div
+        class="container-box"
+        style="
+          background-image: url('https://img.freepik.com/premium-photo/healthy-food-blogger-young-female-cooking-fresh-fruits-vegan-salad-kitchen-studio-filming-tutorial-camera-video-channel-young-female-influencer-shows-her-love-healthy-eating_341052-2428.jpg');
+        "
+      ></div>
+      <div
+        class="container-box"
+        style="
+          background-image: url('https://i.pinimg.com/736x/01/65/00/016500ff104820235eb4b157c7c4e3b2.jpg');
+        "
+      ></div>
+      <div
+        class="container-box"
+        style="
+          background-image: url('https://i.pinimg.com/originals/6a/e6/c9/6ae6c9d22c32d45476a3932d1b3f5760.jpg');
+        "
+      ></div>
+      <div
+        class="container-box"
+        style="
+          background-image: url('https://img.freepik.com/free-photo/headshot-pleasant-looking-female-covers-eyes-with-two-doughnuts-has-long-hair-dressed-light-yellow-jumper-models-pink-studio-wall_273609-24079.jpg');
+        "
+      ></div>
+      <div
+        class="container-box"
+        style="
+          background-image: url('https://i.pinimg.com/originals/31/34/29/313429bcb0c761ab56047977896a435c.jpg');
+        "
+      ></div>
+    </div>
+    <div id="starter" class="food-section">
+      <h1>Starter</h1>
+      <div class="shop-section">
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Veg. momos</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://markymomos.in/assets/images/resource/popular-dish-img1.jpg');
+                "
+              ></div>
+              <h2>₹50<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Veg. momos', 50)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>French Fries</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.thestatesman.com/wp-content/uploads/2019/05/french-fries.jpg');
+                "
+              ></div>
+              <h2>₹49<span>₹80</span></h2>
+              <button class="btn" onclick="addToOrder('French Fries', 49)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Chilli Paneer</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://maunikagowardhan.co.uk/wp-content/uploads/2011/11/Chilli-Paneer.jpg');
+                "
+              ></div>
+              <h2>₹100<span>₹150</span></h2>
+              <button class="btn" onclick="addToOrder('Chilli Paneer', 100)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Spring Rolls</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.connoisseurusveg.com/wp-content/uploads/2022/04/baked-spring-rolls-sq.jpg');
+                "
+              ></div>
+              <h2>₹60<span>₹80</span></h2>
+              <button class="btn" onclick="addToOrder('Spring Rolls', 60)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Veg. Kabaabs</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://images.slurrp.com/prodarticles/o6dib21hju9.webp');
+                "
+              ></div>
+              <h2>₹50<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Veg. Kabaabs', 50)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Veg ChowMein</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i0.wp.com/dishesandflavors.com/wp-content/uploads/2021/01/Veg-Chow-Mein.jpg?resize=800%2C600&ssl=1');
+                "
+              ></div>
+              <h2>₹80<span>₹100</span></h2>
+              <button class="btn" onclick="addToOrder('Veg ChowMein', 80)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Burger</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://wallpaperaccess.com/full/2567163.jpg');
+                "
+              ></div>
+              <h2>₹120<span>₹150</span></h2>
+              <button class="btn" onclick="addToOrder('Burger', 120)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Gol Gappe</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://th.bing.com/th/id/OIP.pGdwZ1gWkQy6D6TwA7hOowHaE8?rs=1&pid=ImgDetMain');
+                "
+              ></div>
+              <h2>₹40<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Gol Gappe', 40)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Sandvich</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://images4.alphacoders.com/664/664192.jpg');
+                "
+              ></div>
+              <h2>₹50<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Sandvich', 50)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Samosa</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i1.wp.com/vegecravings.com/wp-content/uploads/2017/03/samosa-recipe-step-by-step-instructions.jpg?fit=1801%2C1717&ssl=1');
+                "
+              ></div>
+              <h2>₹20<span>₹30</span></h2>
+              <button class="btn" onclick="addToOrder('Samosa', 20)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Bhel Puri</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://th.bing.com/th/id/OIP.ZdSgTzfo3OkKgXwcYzIFkQHaE7?rs=1&pid=ImgDetMain');
+                "
+              ></div>
+              <h2>₹40<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Bhel Puri', 40)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Aloo Tikki</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.whiskaffair.com/wp-content/uploads/2020/09/Aloo-Tikki-2-2.jpg');
+                "
+              ></div>
+              <h2>₹50<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Aloo Tikki', 50)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Main-course" class="food-section">
+      <h1>Main course</h1>
+      <div class="shop-section">
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Paneer Tikka Masala</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/paneer-tikka-masala.jpg');
+                "
+              ></div>
+              <h2>₹120<span>₹150</span></h2>
+              <button
+                class="btn"
+                onclick="addToOrder('Paneer Tikka Masala', 120)"
+              >
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Dal Makhani</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/06/03085614/Untitled-design-1-7.jpg');
+                "
+              ></div>
+              <h2>₹90<span>₹100</span></h2>
+              <button class="btn" onclick="addToOrder('Dal Makhani', 90)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Matar Mushroom</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.funfoodfrolic.com/wp-content/uploads/2020/04/Mushroom-Masala-Thumbnail.jpg');
+                "
+              ></div>
+              <h2>₹80<span>₹100</span></h2>
+              <button class="btn" onclick="addToOrder('Matar Mushroom', 80)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Chana Masala</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://th.bing.com/th/id/OIP.3b-I01J1PZYH8fZy4mI0YwAAAA?rs=1&pid=ImgDetMain');
+                "
+              ></div>
+              <h2>₹60<span>₹80</span></h2>
+              <button class="btn" onclick="addToOrder('Chana Masala', 60)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Rajma Chawal</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg');
+                "
+              ></div>
+              <h2>₹70<span>₹88</span></h2>
+              <button class="btn" onclick="addToOrder('Rajma Chawal', 70)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Veg. Biryani</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/easy-vegetable-biryani.jpg');
+                "
+              ></div>
+              <h2>₹99<span>₹180</span></h2>
+              <button class="btn" onclick="addToOrder('Veg. Biryani', 99)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Palak paneer</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-recipe-featured.jpg');
+                "
+              ></div>
+              <h2>₹130<span>₹160</span></h2>
+              <button class="btn" onclick="addToOrder('Palak paneer', 130)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Bhindi masala</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2020/Bhindi__Masala_Recipe_Bhindi_Tamatar_Sabzi_North_Indian_Recipe_1_1600.jpg');
+                "
+              ></div>
+              <h2>₹50<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Bhindi masala', 50)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Idli sambar</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.redd.it/s1cpi05wsy551.jpg');
+                "
+              ></div>
+              <h2>₹150<span>₹160</span></h2>
+              <button class="btn" onclick="addToOrder('Idli sambar', 150)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Matar paneer</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://th.bing.com/th/id/OIP.sA-K41ga1kH9Ctm1TR1vJAAAAA?rs=1&pid=ImgDetMain');
+                "
+              ></div>
+              <h2>₹130<span>₹160</span></h2>
+              <button class="btn" onclick="addToOrder('Matar paneer', 130)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Kadhi chawal</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://www.indianfoodforever.com/iffwd/wp-content/uploads/kadhi-chawal-1.jpg');
+                "
+              ></div>
+              <h2>₹40<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Kadhi chawal', 40)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Paneer Biryani</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://spicecravings.com/wp-content/uploads/2017/09/IMG_3134-copy-e1579798948176.jpg');
+                "
+              ></div>
+              <h2>₹60<span>₹80</span></h2>
+              <button class="btn" onclick="addToOrder('Paneer Biryani', 60)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Desserts" class="food-section">
+      <h1>Desserts</h1>
+      <div class="shop-section">
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Apple pie</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/apple-pie-ice-cream-625_625x350_81443595158.jpg');
+                "
+              ></div>
+              <h2>₹70<span>₹90</span></h2>
+              <button class="btn" onclick="addToOrder('Apple pie', 70)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Almond malai kulfi</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/almond-kulfi-625_625x350_61443596643.jpg');
+                "
+              ></div>
+              <h2>₹90<span>₹110</span></h2>
+              <button
+                class="btn"
+                onclick="addToOrder('Almond malai kulfi', 90)"
+              >
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Lemon Tart</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/lemon-tart-625_625x350_61443595187.jpg');
+                "
+              ></div>
+              <h2>₹59<span>₹69</span></h2>
+              <button class="btn" onclick="addToOrder('Lemon Tart', 59)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Pistachio Phirni</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/pistachio-phirni-625_625x350_81443596823.jpg');
+                "
+              ></div>
+              <h2>₹79<span>₹99</span></h2>
+              <button class="btn" onclick="addToOrder('Pistachio Phirni', 79)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Chewy Brownies</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/chocolate-brownies-625_625x350_81443599634.jpg');
+                "
+              ></div>
+              <h2>₹149<span>₹200</span></h2>
+              <button class="btn" onclick="addToOrder('Chewy Brownies', 149)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Low Fat Tiramisu</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/tiramisu-625_625x350_41443596307.jpg');
+                "
+              ></div>
+              <h2>₹139<span>₹160</span></h2>
+              <button class="btn" onclick="addToOrder('Low Fat Tiramisu', 139)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Coconut Kheer</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://c.ndtvimg.com/2018-10/6n7i40g8_sharad-purnima-2018-kheer-recipe-and-benefits_625x300_23_October_18.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350');
+                "
+              ></div>
+              <h2>₹139<span>₹160</span></h2>
+              <button class="btn" onclick="addToOrder('Coconut Kheer', 139)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Gulkand Kheer</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://c.ndtvimg.com/2020-04/thbsqd78_seviyan_625x300_24_April_20.jpg');
+                "
+              ></div>
+              <h2>₹149<span>₹170</span></h2>
+              <button class="btn" onclick="addToOrder('Gulkand Kheer', 149)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Hot Cointreau Soffle</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/cointreau-souffle-625_625x350_71443596904.jpg');
+                "
+              ></div>
+              <h2>₹39<span>₹60</span></h2>
+              <button
+                class="btn"
+                onclick="addToOrder('Hot Cointreau Soffle', 39)"
+              >
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Eggless Choco. Mouse</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2015-09/chocolate-mousse-625_625x350_81443596685.jpg');
+                "
+              ></div>
+              <h2>₹59<span>₹70</span></h2>
+              <button
+                class="btn"
+                onclick="addToOrder('Eggless Choco. Mouse', 59)"
+              >
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Gulab Jamun</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://i.ndtvimg.com/i/2017-12/gulab-jamun_620x330_51513836655.jpg');
+                "
+              ></div>
+              <h2>₹49<span>₹60</span></h2>
+              <button class="btn" onclick="addToOrder('Gulab Jamun', 49)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <a>
+              <h2>Kesari Shrikhand</h2>
+              <div
+                class="box-img"
+                style="
+                  background-image: url('https://c.ndtvimg.com/2020-02/mpuns2eg_shrikhand_625x300_27_February_20.jpg');
+                "
+              ></div>
+              <h2>₹79<span>₹100</span></h2>
+              <button class="btn" onclick="addToOrder('Kesari Shrikhand', 79)">
+                Add
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="confirmation"></div>
+    <div id="orderList"></div>
+
+    <div id="moving">
+      <marquee behavior="slider" direction="right">
+        <img
+          id="boy"
+          src="https://bubblycious.co.uk/img/delivery_boy.gif"
+          alt=""
+        />
+      </marquee>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
